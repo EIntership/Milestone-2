@@ -6,7 +6,7 @@ from apps.managers.views import (
     MyTaskView,
     CompletedTaskView,
     AssignTaskToUser,
-    ComplitTaskView,
+    CompleteTaskView,
     CommentAddView,
     CommentView)
 
@@ -17,7 +17,7 @@ urlpatterns = [
     path('mytask', MyTaskView.as_view(), name='My-Task-View'),
     path('compited-task', CompletedTaskView.as_view(), name='Completed-Task'),
     path('add-task-to-user/<int:pk>', AssignTaskToUser.as_view(), name="add-task-to-user"),
-    path('complit-task/<int:pk>', ComplitTaskView.as_view(), name="Complete-Task-View"),
+    path('complit-task/<int:pk>', CompleteTaskView.as_view(), name="Complete-Task-View"),
     path('add-comment', CommentAddView.as_view(), name="CommentAdd-view"),
     path('comment/<int:pk>', CommentView.as_view(), name="Comment-view"),
 ]

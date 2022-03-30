@@ -65,7 +65,7 @@ class AssignTaskToUser(generics.UpdateAPIView):
     queryset = Task.objects.all()
 
 
-class ComplitTaskView(generics.UpdateAPIView):
+class CompleteTaskView(generics.UpdateAPIView):
     permission_classes = (permissions.IsAuthenticated,)
     serializer_class = CompleteTaskSerializer
     queryset = Task.objects.all()
